@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+/* test css: make sure to change this afterwards */
+
+.grid-item {
+    border: 1px solid red;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.item1 {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    height: 100px;
+    padding: 20px 40px;
+    background-color: rgb(59, 93, 79);
+}
+
+.logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #e6e6e6;
+}
+
+.navLinks {
+    display: flex;
+    gap: 40px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(186, 249, 223);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
