@@ -43,3 +43,9 @@
     color: rgb(186, 249, 223);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.navLinks a:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    text-decoration: double;
+}
