@@ -1,8 +1,13 @@
+.body{
+    margin-left:40px;
+    margin-right: 40px;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+    align-items: start;
 }
 
 
@@ -21,7 +26,7 @@
     align-items: center;
     vertical-align: middle;
     height: 100px;
-    padding: 20px 40px;
+
     background-color: rgb(59, 93, 79);
 }
 
@@ -48,4 +53,13 @@
     transform: scale(1.1);
     transition: all .2s ease-in-out;
     text-decoration: double;
+}
+.item2 {
+    grid-column: span 4;
+    background-color: rgb(59, 93, 79);
+    height: 400px;
+    color: white; /* Set text color for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
