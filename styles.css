@@ -1,65 +1,58 @@
-.body{
-    margin-left:40px;
-    margin-right: 40px;
+*{
+    box-sizing: border-box;
 }
+body{
+    display: block;
+    margin-left:0;
+    margin-right:0;
+}
+/* Grid CSS Start*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    align-items: start;
+
 }
-
-
-/* test css: make sure to change this afterwards */
-
+/* grid border testing start */
 .grid-item {
-    border: 1px solid red;
-    /* padding: 10px; */
-    text-align: center;
+    border:1px solid red;
 }
-
-.item1 {
-    grid-column: span 4;
+/* grid border test end */
+/* spanning across 4 columns */
+.item1, .item2{
+    grid-column: 1/5;
+}
+/* Grid CSS End */
+/* nav bar CSS Start*/
+    .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    vertical-align: middle;
-    height: 100px;
-
-    background-color: rgb(59, 93, 79);
-}
-
-.logo {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: #e6e6e6;
-}
-
-.navLinks {
-    display: flex;
-    gap: 40px;
-}
-
-.navLinks a {
+    padding: 15px 20px;
+    background-color:rgb(59, 93, 79);
+    color: #fff;
+    }
+   
+    .logo {
     text-decoration: none;
-    font-size: 20px;
-    color: rgb(186, 249, 223);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.navLinks a:hover {
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-    text-decoration: double;
-}
-.item2 {
-    grid-column: span 4;
-    background-color: rgb(59, 93, 79);
-    height: 400px;
-    color: white; /* Set text color for better visibility */
+    color: #fff;
+    }
+   
+    .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    }
+   
+    .nav-links li a {
+    text-decoration: none;
+    color: rgb(106, 140, 126);
+    padding: 8px 16px;
+    }
+   
+    .nav-links li a:hover {
+    color: rgb(181, 211, 204);
+    transition: 0.2s ease-in-out;
+    }
+/* Nav bar CSS End */
