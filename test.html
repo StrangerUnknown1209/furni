@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    *{
+        box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -22,6 +25,7 @@
 
     .text-content {
       flex: 1;
+      max-width:250px;
     }
 
     .text-content h1 {
@@ -30,19 +34,54 @@
     }
 
     .text-content p {
-      font-size: 1.2em;
+      font-size: 0.7em;
       margin: 0;
+      max-width: 100%;
     }
 
     .image-container {
       flex: 1;
       display: flex;
       justify-content: flex-end;
+      border:1px solid red;
     }
 
     .image-container img {
       max-width: 100%;
       height: auto;
+      max-height: 300px;
+    }
+    .container{
+        margin-top:15px;
+    }
+    .container a{
+        text-decoration: none;
+    }
+    
+    .button{
+        display: inline;
+        border:1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        /* testing */
+        padding:10px 20px;
+    }
+    .yellow-button{
+        background-color:rgb(245, 191, 49);
+        color:black;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size:small;
+
+    }
+    .transparent-button{
+        border:1px solid rgb(224, 224, 224);
+        border-radius: 20px;
+        
+        font-weight: bold;
+        font-size: small;
+        text-decoration: none;
+        color:rgb(224, 224, 224);
+        
     }
   </style>
 </head>
@@ -50,9 +89,20 @@
 
 <div class="banner">
   <div class="text-content">
-    <h1>Modern Interior<br>Design Studio</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam reprehenderit atque eum fugit at.</p>
-    
+    <h1>
+        Modern Interior<br>Design Studio
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam reprehenderit atque eum fugit at.
+    </p>
+    <div class="container">
+        <a href="#">
+            <div class="button yellow-button"> Shop Now</div>
+        </a>
+        <a href="#">
+            <div class="button transparent-button">Explore</div>
+        </a>
+    </div>
   </div>
   <div class="image-container">
     <img src="/assets/images/sofa.png" alt="Banner Image">
