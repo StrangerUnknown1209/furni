@@ -10,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* ---------------------------------------------------------------------- */
+
 /* Grid CSS Start*/
 .grid-container {
   display: grid;
@@ -22,20 +23,16 @@ body {
 
 .grid-item {
     border:1px solid red;
+    grid-column: 1/5;
 }
-
 
 /* grid border test end */
-/* spanning across 4 columns */
-.item1,
-.item2,
-.item3 {
-  grid-column: 1/5;
-}
 
 
 /* Grid CSS End */
+
 /* ------------------------------------------------------------------------- */
+
 /* nav bar CSS Start*/
 .navbar {
   display: flex;
@@ -76,7 +73,9 @@ body {
 }
 
 /* Nav bar CSS End */
+
 /* ------------------------------------------------------------------------------ */
+
 /* Banner CSS Start */
 
 .banner {
@@ -173,7 +172,9 @@ body {
 }
 
 /* Banner CSS End */
+
 /* --------------------------------------------------------------------- */
+
 /* section 3 CSS Start */
 .sec-text {
   text-align: left;
@@ -257,4 +258,21 @@ body {
 }
 
 /* Section 3 CSS End */
+
+/* --------------------------------------------------------------------- */
+
+/* Section 4 CSS Start */
+
+
+
+/* Section 4 CSS End */
+
+/* --------------------------------------------------------------------- */
+
+/* Section 5 CSS Start */
+
+
+
+/* Section 5 CSS End */
+
 /* --------------------------------------------------------------------- */

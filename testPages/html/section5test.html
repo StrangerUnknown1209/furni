@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            border: 1px solid red;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section5 {
+            position: relative;
+            display: flex;
+            padding: 15px 10%;
+        }
+
+        .s5-box {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .s5-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1%;
+            height: 100%;
+        }
+
+        .s5-grid-item {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .s5-item1 {
+            grid-column: 1/3;
+        }
+
+        /* Pseudo-element for maintaining 1:2 height-to-width ratio */
+        .section5:before {
+            content: "";
+            padding-top: 50%;
+            /* 1:2 ratio (50% of the width) */
+            display: block;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section5">
+        <div class="s5-box">
+            <!-- Content for the first box -->
+        </div>
+        <div class="s5-box">
+            <div class="s5-grid-container">
+                <div class="s5-grid-item s5-item1">1</div>
+                <div class="s5-grid-item">2</div>
+                <div class="s5-grid-item">3</div>
+                <div class="s5-grid-item">4</div>
+                <div class="s5-grid-item">5</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
