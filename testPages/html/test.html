@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,59 +22,86 @@
       flex: 1;
       height: 300px;
       margin: 0 10px;
-      border:1px solid red;
+      border: 1px solid red;
+      position:relative;
+      border-radius: 20px;
     }
+
     /* .box-chair:hover{
 
     } */
-    .sec-text{
+    .sec-text {
       text-align: left;
-      color:rgb(124, 125, 125);
+      color: rgb(124, 125, 125);
     }
-    .sectext-a{
+
+    .sectext-a {
       text-decoration: none;
-      color:rgb(232, 232, 232);
+      color: rgb(232, 232, 232);
     }
-    .button {
-  display: inline-block;
-  border: 1px solid black;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top:20px;
-  
-  padding: 10px 20px;
-}
-    .grey-button{
+
+    .button-s3 {
+      display: inline-block;
+      border: 1px solid black;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 20px;
+
+      padding: 10px 20px;
+    }
+
+    .grey-button {
       background-color: rgb(46, 46, 46);
       border-radius: 20px;
       font-weight: bold;
       font-size: small;
     }
-    .img-container{
+
+    .img-container {
       height: 150px;
+      z-index:1
     }
-    .centre-align{
-      text-align:center;
+
+    .centre-align {
+      text-align: center;
     }
+    .product{
+      position:absolute;
+      bottom:0;
+      width:100%;
+      align-items: center;
+      height: 50%;
+      border:1px solid green;
+      font-size: small;
+      font-weight: bolder;
+      z-index:0;
+    }
+    
   </style>
 </head>
+
 <body>
 
   <div class="section3">
     <div class="box-chair">
       <h2>Crafted with <br>excellent <br>material.</h2>
       <div class="sec-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eveniet labore cum enim repudiandae, consequuntur doloribus quod recusandae soluta ex.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eveniet labore cum enim repudiandae, consequuntur
+        doloribus quod recusandae soluta ex.
       </div>
       <a href="#" class="sectext-a">
-        <div class="button grey-button">
+        <div class="button-s3 grey-button">
           Explore
         </div>
       </a>
-    
+
     </div>
     <div class="box-chair centre-align">
       <div>
         <img src="/assets/images/chair1.png" class="img-container" alt="chair 1">
+      </div>
+      <div class="product">
+        Nordic Chair
+        <p>$49.99</p>
       </div>
     </div>
     <div class="box-chair centre-align">
@@ -89,4 +117,5 @@
   </div>
 
 </body>
+
 </html>
