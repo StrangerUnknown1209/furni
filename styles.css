@@ -18,15 +18,17 @@ body {
 }
 
 /* grid border testing start */
-/* .grid-item {
+.grid-item {
     border:1px solid red;
-} */
+}
 /* grid border test end */
 /* spanning across 4 columns */
 .item1,
-.item2 {
+.item2,
+.item3 {
   grid-column: 1/5;
 }
+
 
 /* Grid CSS End */
 /* ------------------------------------------------------------------------- */
