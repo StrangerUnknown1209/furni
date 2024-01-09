@@ -32,17 +32,34 @@
         }
         
         .s4-main-img {
+            display: inline-block;
             position: absolute;
             width: 80%;
+            height: 80%;
             bottom: 0;
             right: 0;
             z-index: 1;
+            object-fit: contain;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        
+        .s4-main-img img {
+            height: 100%;
         }
         
         .s4-sub-img {
             position: absolute;
             top: 0;
             left: 0;
+            width: 40%;
+            height: 40%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .s4-sub-img img {
+            width: auto;
         }
         
         .s4-grid-container {
@@ -150,6 +167,9 @@
         <div class="s4-box s4-img-box">
             <div class="s4-main-img">
                 <img src="/assets/images/s4-main-img.jpg" alt="s4 main image">
+            </div>
+            <div class="s4-sub-img">
+                <img src="/assets/images/dots.png" alt="s4 sub image">
             </div>
         </div>
     </div>

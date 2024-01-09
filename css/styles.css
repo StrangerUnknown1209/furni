@@ -1,278 +1,392 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
 /* ---------------------------------------------------------------------- */
 
-/* Grid CSS Start*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 
+/* Grid CSS Start*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
 
 /* grid border testing start */
 
-
 .grid-item {
-    border:1px solid red;
+    border: 1px solid red;
     grid-column: 1/5;
 }
+
 
 /* grid border test end */
 
 
 /* Grid CSS End */
 
+
 /* ------------------------------------------------------------------------- */
 
+
 /* nav bar CSS Start*/
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-  padding: 15px 10%;
-  background-color: rgb(59, 93, 79);
-  color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 15px 10%;
+    background-color: rgb(59, 93, 79);
+    color: #fff;
 }
 
 .logo {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bolder;
-  font-size:50px;
-  font-family: monospace;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: monospace;
 }
 
 .nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: rgb(106, 140, 126);
-  padding: 8px 16px;
-  transition: color 0.2s ease-in-out;
-  /* border:1px solid red; */
+    text-decoration: none;
+    color: rgb(106, 140, 126);
+    padding: 8px 16px;
+    transition: color 0.2s ease-in-out;
+    /* border:1px solid red; */
 }
 
 .nav-links li a:hover {
-  color: rgb(181, 211, 204);
-  height:100%;
+    color: rgb(181, 211, 204);
+    height: 100%;
 }
+
 
 /* Nav bar CSS End */
 
+
 /* ------------------------------------------------------------------------------ */
+
 
 /* Banner CSS Start */
 
 .banner {
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  background-color: #3b5d4f;
-  color: #fff;
-  Height: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #3b5d4f;
+    color: #fff;
+    Height: 300px;
 }
 
 .text-content {
-  flex: 1;
-  max-width: 275px;
+    flex: 1;
+    max-width: 275px;
 }
 
 .text-content h1 {
-  font-size: 234%;
-  margin-bottom: 10px;
+    font-size: 234%;
+    margin-bottom: 10px;
 }
 
 .text-content p {
-  font-size: 0.7em;
-  margin: 0;
-  max-width: 100%;
+    font-size: 0.7em;
+    margin: 0;
+    max-width: 100%;
 }
 
 .image-container {
-  flex: 1;
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
 }
 
 .banner-img {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  z-index: 1;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    z-index: 1;
 }
 
 .dots {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  height: 160px;
-  width: 230px;
-
-  display: inline;
-  z-index: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: 160px;
+    width: 230px;
+    display: inline;
+    z-index: 0;
 }
 
 .container {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .container a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .button {
-  display: inline;
-  border: 1px solid black;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 20px;
+    display: inline;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
 }
 
 .yellow-button {
-  background-color: rgb(245, 191, 49);
-  color: black;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: small;
-  transition:background-color 0.2s ease-in-out;
+    background-color: rgb(245, 191, 49);
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: small;
+    transition: background-color 0.2s ease-in-out;
 }
-.yellow-button:hover{
-  background-color:rgb(194, 151, 38) ;
+
+.yellow-button:hover {
+    background-color: rgb(194, 151, 38);
 }
 
 .transparent-button {
-  border: 1px solid rgb(224, 224, 224);
-  border-radius: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: small;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    transition: background-color 0.2s ease-in-out;
+}
 
-  font-weight: bold;
-  font-size: small;
-  text-decoration: none;
-  color: rgb(224, 224, 224);
-  transition:background-color 0.2s ease-in-out;
+.transparent-button:hover {
+    background-color: rgb(130, 133, 132);
 }
-.transparent-button:hover{
-  background-color:rgb(130, 133, 132) ;
-}
+
 
 /* Banner CSS End */
 
+
 /* --------------------------------------------------------------------- */
 
+
 /* section 3 CSS Start */
+
 .sec-text {
-  text-align: left;
-  color: rgb(124, 125, 125);
+    text-align: left;
+    color: rgb(124, 125, 125);
 }
 
 .sectext-a {
-  text-decoration: none;
-  color: rgb(232, 232, 232);
+    text-decoration: none;
+    color: rgb(232, 232, 232);
 }
 
 .button-s3 {
-  display: inline-block;
-  border: 1px solid black;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-
-  padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 10px 20px;
 }
 
 .grey-button {
-  background-color: rgb(46, 46, 46);
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: small;
-  transition:background-color 0.2s ease-in-out;
+    background-color: rgb(46, 46, 46);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: small;
+    transition: background-color 0.2s ease-in-out;
 }
-.grey-button:hover{
-  background-color:rgb(84, 84, 84);
+
+.grey-button:hover {
+    background-color: rgb(84, 84, 84);
 }
 
 .section3-container {
-  display: flex;
-  padding: 10px 10% 10px 10%;
-  justify-content: space-between;
-  align-items: center;
-  /* border:2px solid red; */
+    display: flex;
+    padding: 10px 10% 10px 10%;
+    justify-content: space-between;
+    align-items: center;
+    /* border:2px solid red; */
 }
+
 .s3-box-static {
-  flex: 1;
-  height: max-content;
-  min-height:250px;
-  max-height:400px;
-  background-color:#fff;
-  margin: 0 10px;
-  /* border:2px solid red; */
-  border-radius:20px;
+    flex: 1;
+    height: max-content;
+    min-height: 250px;
+    max-height: 400px;
+    background-color: #fff;
+    margin: 0 10px;
+    /* border:2px solid red; */
+    border-radius: 20px;
 }
 
 .s3-box {
-  flex: 1;
-  position:relative;
-  height:max-content;
-  min-height:250px;
-  max-height: 400px;
-  background-color:#fff;
-  margin: 0 10px;
-  /* border:2px solid red; */
-  border-radius:20px;
-  transition: background-color 0.4s;
-  text-align:center;
-  overflow:hidden;
+    flex: 1;
+    position: relative;
+    height: max-content;
+    min-height: 250px;
+    max-height: 400px;
+    background-color: #fff;
+    margin: 0 10px;
+    /* border:2px solid red; */
+    border-radius: 20px;
+    transition: background-color 0.4s;
+    text-align: center;
+    overflow: hidden;
 }
-.s3-box img{
-  height:150px;
-}
-.s3-box:hover{
-  background-color: rgb(220, 228, 228);
 
+.s3-box img {
+    height: 150px;
 }
-.plus-icon{
-  position:absolute;
-  bottom:0;
-  left:50%;
-  transform: translateX(-50%);
-  opacity:0;
-  transition: opacity 0.3s ease-in-out;
+
+.s3-box:hover {
+    background-color: rgb(220, 228, 228);
 }
-.s3-box:hover .plus-icon{
-  opacity: 1;
+
+.plus-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.s3-box:hover .plus-icon {
+    opacity: 1;
+}
+
 
 /* Section 3 CSS End */
 
+
 /* --------------------------------------------------------------------- */
+
 
 /* Section 4 CSS Start */
 
+.section4 {
+    position: relative;
+    display: flex;
+    padding: 15px 10%;
+    margin-top: 40px;
+}
+
+.s4-box {
+    flex: 1;
+    /* border: 1px solid #ccc; */
+    padding: 15px;
+}
+
+.s4-img-box {
+    position: relative;
+}
+
+.s4-main-img {
+    display: inline-block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.s4-main-img img {
+    height: 100%;
+}
+
+.s4-sub-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s4-sub-img img {
+    width: auto;
+}
+
+.s4-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+    height: 100%;
+}
+
+.s4-grid-item {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    text-align: left;
+}
+
+.s4-item1 {
+    grid-column: 1/3;
+}
+
+
+/* Pseudo-element for maintaining 1:2 height-to-width ratio */
+
+.section4:before {
+    content: "";
+    padding-top: 50%;
+    /* 1:2 ratio (50% of the width) */
+    display: block;
+    visibility: hidden;
+}
+
+.s4-icon {
+    font-weight: bold;
+    font-size: large;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: none;
+    box-shadow: 10px 10px 7px 0px rgb(84, 84, 84);
+    padding-bottom: 5px;
+}
+
+.s4-icon svg {
+    background-color: #ffffff00;
+}
 
 
 /* Section 4 CSS End */
 
+
 /* --------------------------------------------------------------------- */
+
 
 /* Section 5 CSS Start */
 
 
-
 /* Section 5 CSS End */
+
 
 /* --------------------------------------------------------------------- */
