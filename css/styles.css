@@ -10,6 +10,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#sub-heading {
+    font-size: 30px;
+    /* border: 1px solid blue; */
+    /* testing code above. can be removed if needed. */
+    font-family: sans-serif;
+}
+
 
 /* ---------------------------------------------------------------------- */
 
@@ -316,6 +323,12 @@ body {
 
 .s4-main-img img {
     height: 100%;
+    scale: 1;
+    transition: scale 0.4s ease-in-out;
+}
+
+.s4-main-img img:hover {
+    scale: 1.04;
 }
 
 .s4-sub-img {
@@ -329,7 +342,7 @@ body {
 }
 
 .s4-sub-img img {
-    width: auto;
+    max-width: 100%;
 }
 
 .s4-grid-container {
@@ -385,8 +398,156 @@ body {
 
 /* Section 5 CSS Start */
 
+.section5 {
+    position: relative;
+    display: flex;
+    padding: 15px 10%;
+}
+
+.s5-box {
+    flex: 1;
+    padding: 15px;
+    position: relative;
+}
+
+.s5-img-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.s5-img-box * {
+    border-radius: 17px;
+    overflow: hidden;
+    scale: 1;
+    transition: scale 0.4s ease-in-out;
+}
+
+.s5-img-box *:hover {
+    scale: 1.03;
+}
+
+#s5-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background: none;
+}
+
+#s5-img2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 60%;
+    height: 80%;
+    background: none;
+}
+
+#s5-img3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 55%;
+    background: none;
+}
+
+#s5-img4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 30%;
+    background-color: #ff0;
+}
+
+.s5-act-img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.s5-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+    height: 90%;
+}
+
+.s5-grid-item {
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+}
+
+.s5-item1 {
+    grid-column: 1/3;
+}
+
+.s5-icon {
+    width: 10%;
+    height: 100%;
+}
+
+.s5-text-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: left;
+}
+
+.s5-text {
+    width: 90%;
+    height: 100%;
+}
+
+
+/* Pseudo-element for maintaining 1:2 height-to-width ratio */
+
+.section5:before {
+    content: "";
+    padding-top: 50%;
+    /* 1:2 ratio (50% of the width) */
+    display: block;
+    visibility: hidden;
+}
+
 
 /* Section 5 CSS End */
+
+
+/* --------------------------------------------------------------------- */
+
+
+/* Section 6 Start */
+
+.section6-container {
+    display: flex;
+    padding: 10px 10% 10px 10%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.s6-box {
+    flex: 1;
+    height: max-content;
+    min-height: 250px;
+    max-height: 400px;
+    background-color: #fff;
+    margin: 0 10px;
+    border: 2px solid red;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+.s6-box:hover {
+    background-color: rgb(220, 228, 228);
+}
+
+
+/* Section 6 End */
 
 
 /* --------------------------------------------------------------------- */

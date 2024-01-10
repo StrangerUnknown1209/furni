@@ -8,24 +8,76 @@
         * {
             border: 1px solid red;
         }
-
+        
         body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         .section5 {
             position: relative;
             display: flex;
             padding: 15px 10%;
         }
-
+        
         .s5-box {
             flex: 1;
             padding: 15px;
+            position: relative;
         }
-
+        
+        .s5-img-box {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        
+        .s5-img-box * {
+            border-radius: 17px;
+            overflow: hidden;
+        }
+        
+        #s5-img1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 30%;
+            background-color: #f00;
+            /* Optional: Add background color for better visualization */
+        }
+        
+        #s5-img2 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 60%;
+            height: 80%;
+            background-color: #0f0;
+            /* Optional: Add background color for better visualization */
+        }
+        
+        #s5-img3 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40%;
+            height: 55%;
+            background-color: #00f;
+            /* Optional: Add background color for better visualization */
+        }
+        
+        #s5-img4 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: 30%;
+            background-color: #ff0;
+            /* Optional: Add background color for better visualization */
+        }
+        
         .s5-grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -33,17 +85,17 @@
             gap: 1%;
             height: 100%;
         }
-
+        
         .s5-grid-item {
             padding: 10px;
             text-align: center;
         }
-
+        
         .s5-item1 {
             grid-column: 1/3;
         }
-
         /* Pseudo-element for maintaining 1:2 height-to-width ratio */
+        
         .section5:before {
             content: "";
             padding-top: 50%;
@@ -59,10 +111,20 @@
     <div class="section5">
         <div class="s5-box">
             <!-- Content for the first box -->
+            <div class="s5-img-box">
+                <div id="s5-img1">
+                    <img src="" alt="">
+                </div>
+                <div id="s5-img2"></div>
+                <div id="s5-img3"></div>
+                <div id="s5-img4"></div>
+            </div>
+
         </div>
         <div class="s5-box">
             <div class="s5-grid-container">
-                <div class="s5-grid-item s5-item1">1</div>
+                <div class="s5-grid-item s5-item1">
+                </div>
                 <div class="s5-grid-item">2</div>
                 <div class="s5-grid-item">3</div>
                 <div class="s5-grid-item">4</div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            position: relative;
+            width: 300px;
+            /* You can adjust the width of the box */
+            height: 300px;
+            /* You can adjust the height of the box */
+            border: 1px solid #000;
+            /* Optional: Add border for better visualization */
+        }
+        
+        .box * {
+            border-radius: 16px;
+        }
+        
+        #s5-img1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 30%;
+            background-color: #f00;
+            /* Optional: Add background color for better visualization */
+        }
+        
+        #s5-img2 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 60%;
+            height: 80%;
+            background-color: #0f0;
+            /* Optional: Add background color for better visualization */
+        }
+        
+        #s5-img3 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40%;
+            height: 55%;
+            background-color: #00f;
+            /* Optional: Add background color for better visualization */
+        }
+        
+        #s5-img4 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: 30%;
+            background-color: #ff0;
+            /* Optional: Add background color for better visualization */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div id="s5-img1"></div>
+        <div id="s5-img2"></div>
+        <div id="s5-img3"></div>
+        <div id="s5-img4"></div>
+    </div>
+
+</body>
+
+</html>
