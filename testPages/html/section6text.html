@@ -25,9 +25,9 @@
         
         .s6-box {
             flex: 1;
-            height: max-content;
-            min-height: 250px;
-            max-height: 400px;
+            display: flex;
+            height: 150px;
+            min-height: 100px;
             background-color: #fff;
             margin: 0 10px;
             border: 2px solid red;
@@ -35,8 +35,43 @@
             transition: background-color 0.2s;
         }
         
-        .s6-box:hover {
-            background-color: rgb(220, 228, 228);
+        .s6-img {
+            width: 20%;
+            height: 100%;
+            display: inline-block;
+        }
+        
+        .s6-img img {
+            width: 100%;
+        }
+        
+        .s6-text {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 100%;
+            align-items: flex-start;
+        }
+        
+        .s6-anchor {
+            display: inline;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            scale: 1.0;
+            transition: color 0.3s ease-in-out, scale 0.3s ease-in-out;
+        }
+        
+        .s6-anchor:hover {
+            color: rgb(85, 85, 85);
+            scale: 1.04;
+        }
+        
+        .s6-head {
+            font-size: 12px;
+            display: inline;
+            font-weight: bolder;
+            color: black;
         }
     </style>
 </head>
@@ -45,10 +80,44 @@
 
     <div class="section6-container">
         <div class="s6-box">
+            <div class="s6-img">
+                <img src="/assets/images/chair1.png" alt=" chair 1">
+            </div>
+            <div class="s6-text">
+                <p class="s6-head">
+                    Nordic Chair
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="s6-anchor">Read More.</a>
+
+            </div>
 
         </div>
-        <div class="s6-box"></div>
-        <div class="s6-box"></div>
+        <div class="s6-box">
+            <div class="s6-img">
+                <img src="/assets/images/chair2.png" alt="chair 2">
+            </div>
+            <div class="s6-text">
+                <p class="s6-head">
+                    Loveseat
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <a href="#" class="s6-anchor">Read More.</a>
+
+            </div>
+        </div>
+        <div class="s6-box">
+            <div class="s6-img">
+                <img src="/assets/images/chair3.png" alt="chair 3">
+            </div>
+            <div class="s6-text">
+                <p class="s6-head">
+                    Recycled Pine Chair
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="s6-anchor">Read More.</a>
+            </div>
+        </div>
     </div>
 
 </body>

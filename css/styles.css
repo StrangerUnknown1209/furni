@@ -32,7 +32,7 @@ body {
 /* grid border testing start */
 
 .grid-item {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-column: 1/5;
 }
 
@@ -527,23 +527,58 @@ body {
     padding: 10px 10% 10px 10%;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .s6-box {
     flex: 1;
-    height: max-content;
-    min-height: 250px;
-    max-height: 400px;
+    display: flex;
+    height: 150px;
+    min-height: 100px;
     background-color: #fff;
     margin: 0 10px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 20px;
     transition: background-color 0.2s;
 }
 
-.s6-box:hover {
-    background-color: rgb(220, 228, 228);
+.s6-img {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.s6-img img {
+    width: 100%;
+}
+
+.s6-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.s6-anchor {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    scale: 1.0;
+    transition: color 0.3s ease-in-out, scale 0.3s ease-in-out;
+}
+
+.s6-anchor:hover {
+    color: rgb(85, 85, 85);
+    scale: 1.04;
+}
+
+.s6-head {
+    font-size: 12px;
+    display: inline;
+    font-weight: bolder;
+    color: black;
 }
 
 
